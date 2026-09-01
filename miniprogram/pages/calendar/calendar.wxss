@@ -1,0 +1,5 @@
+page { background: #f7f8fa; }
+.page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding-top: 220rpx; box-sizing: border-box; }
+.placeholder-icon { width: 120rpx; height: 120rpx; border-radius: 32rpx; background: #e9efff; color: #5376f6; display: flex; align-items: center; justify-content: center; font-size: 48rpx; font-weight: 600; }
+.placeholder-title { color: #394150; font-size: 36rpx; font-weight: 600; margin-top: 30rpx; }
+.placeholder-tip { color: #9aa3b2; font-size: 26rpx; margin-top: 14rpx; }

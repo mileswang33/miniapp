@@ -1,0 +1,5 @@
+<view class="page">
+  <view class="placeholder-icon">日</view>
+  <view class="placeholder-title">日历</view>
+  <view class="placeholder-tip">日历功能即将上线</view>
+</view>

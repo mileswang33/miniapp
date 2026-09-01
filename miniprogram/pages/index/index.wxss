@@ -1,0 +1,23 @@
+page { background: #f7f8fa; }
+.page { min-height: 100vh; padding: 48rpx 32rpx 150rpx; box-sizing: border-box; }
+.header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 34rpx; }
+.title { color: #1f2937; font-size: 48rpx; font-weight: 700; }
+.subtitle { color: #8b95a7; font-size: 26rpx; margin-top: 10rpx; }
+.count { color: #6b7280; font-size: 26rpx; padding-bottom: 8rpx; }
+.search-box { display: flex; align-items: center; height: 78rpx; padding: 0 24rpx; background: #fff; border-radius: 18rpx; box-sizing: border-box; }
+.search-icon { color: #9aa3b2; font-size: 40rpx; line-height: 1; margin-right: 14rpx; }
+.search-input { flex: 1; color: #1f2937; font-size: 28rpx; }
+.clear-search { color: #9aa3b2; font-size: 38rpx; padding-left: 16rpx; }
+.note-list { margin-top: 28rpx; }
+.note-card { display: flex; align-items: center; background: #fff; border-radius: 20rpx; padding: 28rpx; margin-bottom: 20rpx; box-shadow: 0 8rpx 24rpx rgba(31, 41, 55, .04); }
+.note-main { flex: 1; min-width: 0; }
+.note-title { color: #202938; font-size: 32rpx; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.note-content { color: #697386; font-size: 28rpx; line-height: 1.5; margin-top: 12rpx; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.note-time { color: #a1a9b5; font-size: 23rpx; margin-top: 16rpx; }
+.delete-button { color: #e5484d; font-size: 25rpx; padding: 16rpx 0 16rpx 24rpx; }
+.empty-state { display: flex; flex-direction: column; align-items: center; padding-top: 220rpx; }
+.empty-icon { width: 120rpx; height: 120rpx; border-radius: 50%; background: #e9efff; color: #5b7cfa; display: flex; align-items: center; justify-content: center; font-size: 62rpx; }
+.empty-title { color: #394150; font-size: 32rpx; font-weight: 600; margin-top: 28rpx; }
+.empty-tip { color: #9aa3b2; font-size: 25rpx; margin-top: 12rpx; }
+.add-button { position: fixed; left: 32rpx; right: 32rpx; bottom: 42rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box; height: 94rpx; padding: 0; line-height: 1; border-radius: 20rpx; background: #5376f6; color: #fff; font-size: 30rpx; box-shadow: 0 12rpx 28rpx rgba(83, 118, 246, .25); }
+.add-button::after { border: none; }
