@@ -10,3 +10,12 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+## 项目协作要求
+
+在本项目中进行任何本地代码修改前，必须先检查 GitHub 远程仓库是否有新的提交。
+
+- 先执行 `git fetch origin`，检查本地分支与 `origin/main` 的差异。
+- 如果远程仓库有更新，先向项目负责人说明并询问是否获取最新代码。
+- 未得到明确确认前，不执行 `git pull`、合并远程分支，也不覆盖本地修改。
+- 如果远程没有更新，再继续编辑本地代码。
+- 完成修改后，提交清晰的 commit，并在获得推送授权后执行 `git push`。
