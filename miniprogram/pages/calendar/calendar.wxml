@@ -1,5 +1,56 @@
 <view class="page">
-  <view class="placeholder-icon">日</view>
-  <view class="placeholder-title">日历</view>
-  <view class="placeholder-tip">日历功能即将上线</view>
+  <view class="header">
+    <view>
+      <view class="title">日历</view>
+      <view class="subtitle">按日期查看你的备忘录</view>
+    </view>
+    <button class="today-button" bindtap="goToday">今天</button>
+  </view>
+
+  <view class="calendar-panel">
+    <view class="month-bar">
+      <button class="month-button" bindtap="prevMonth">‹</button>
+      <view class="month-title">{{monthTitle}}</view>
+      <button class="month-button" bindtap="nextMonth">›</button>
+    </view>
+
+    <view class="week-row">
+      <view wx:for="{{weekDays}}" wx:key="*this" class="week-cell">{{item}}</view>
+    </view>
+
+    <view class="day-grid">
+      <view
+        wx:for="{{calendarDays}}"
+        wx:key="key"
+        class="day-cell {{item.isCurrentMonth ? '' : 'is-empty'}} {{item.isToday ? 'is-today' : ''}} {{item.isSelected ? 'is-selected' : ''}}"
+        data-date="{{item.dateKey}}"
+        bindtap="selectDate"
+      >
+        <text wx:if="{{item.day}}" class="day-number">{{item.day}}</text>
+        <view wx:if="{{item.noteCount}}" class="note-dot">{{item.noteCount}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="agenda-header">
+    <view>
+      <view class="agenda-date">{{selectedDateText}}</view>
+      <view class="agenda-count">{{agendaCountText}}</view>
+    </view>
+    <button class="add-small-button" bindtap="createNote">＋</button>
+  </view>
+
+  <view wx:if="{{selectedNotes.length}}" class="note-list">
+    <view wx:for="{{selectedNotes}}" wx:key="id" class="note-card" data-id="{{item.id}}" bindtap="editNote">
+      <view class="note-title">{{item.title || '无标题'}}</view>
+      <view class="note-content">{{item.content || '暂无内容'}}</view>
+      <view class="note-time">{{item.updatedAtText}}</view>
+    </view>
+  </view>
+
+  <view wx:else class="empty-state">
+    <view class="empty-icon">＋</view>
+    <view class="empty-title">这一天还没有记录</view>
+    <view class="empty-tip">点右侧加号，新建一条备忘录</view>
+  </view>
 </view>

@@ -4,6 +4,8 @@ page { background: #f7f8fa; }
 .content-label { margin-top: 38rpx; }
 .title-input, .content-input { width: 100%; box-sizing: border-box; background: #fff; border-radius: 18rpx; color: #202938; font-size: 30rpx; }
 .title-input { height: 88rpx; padding: 0 24rpx; }
+.date-picker { display: flex; align-items: center; justify-content: space-between; height: 88rpx; padding: 0 24rpx; border-radius: 18rpx; background: #fff; color: #202938; font-size: 30rpx; box-sizing: border-box; }
+.date-arrow { color: #98a2b3; font-size: 42rpx; line-height: 1; }
 .content-input { min-height: 380rpx; padding: 24rpx; line-height: 1.6; }
 .word-count { color: #a1a9b5; font-size: 23rpx; text-align: right; margin-top: 12rpx; }
 .save-button { display: flex; align-items: center; justify-content: center; box-sizing: border-box; height: 92rpx; padding: 0; line-height: 1; border-radius: 18rpx; background: #5376f6; color: #fff; font-size: 30rpx; margin-top: 52rpx; }
